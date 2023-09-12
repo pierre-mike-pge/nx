@@ -37,6 +37,7 @@ it will ignore it. It does this for two reasons:
 2. Allows developers to create `.env.local` or `.local.env` files for their local environment and override any project
    defaults set in `.env`
 3. Allows developers to create target specific `.env.[target-name]` or `.[target-name].env` to overwrite environment variables for specific targets. For instance, you could increase the memory use for node processes only for build targets by setting `NODE_OPTIONS=--max-old-space-size=4096` in `.build.env`
+4. [configuration-name] was only introduced in version Nx 15.7. 
 
 For example:
 
